@@ -34,3 +34,13 @@ def calcular_estatisticas(text: str) -> Dict[str, Any]:
     }
     
     return stats
+
+def print_stats(stats: dict) -> None:
+    print("\nEstatísticas do Texto")
+    print(f"- Total de palavras      : {stats['total_palavras']:,}".replace(",", "."))
+    print(f"- Vocabulário único      : {stats['vocabulario_unico']:,}".replace(",", "."))
+
+    print("\nTop 10 palavras (sem stopwords)")
+    for i, (palavra, freq) in enumerate(stats["top_10"], start=1):
+        print(f"{i:>2}. {palavra:<15} ({freq})")
+    print()
