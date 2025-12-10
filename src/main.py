@@ -64,6 +64,10 @@ def main():
             filename="resumo_pdf"
         )
 
+    print("\nInformações do PDF")
+    print(f"- Número total de páginas : {paginas}")
+    print(f"- Tamanho do PDF (bytes)  : {tamanho:,}".replace(",", "."))
+    
     print_stats(stats)
 
     if resumo:
