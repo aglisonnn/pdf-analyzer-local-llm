@@ -1,6 +1,7 @@
 from typing import List
 from transformers import PreTrainedTokenizer, PreTrainedModel
 import torch
+import time
 
 
 def split_text(text: str, max_words: int = 500) -> List[str]:
@@ -64,9 +65,15 @@ def summarize_text(
     partial_summaries = []
 
     for idx, chunk in enumerate(chunks, start=1):
+        start_time = time.time()
+
         print(f"Resumindo parte {idx}/{len(chunks)}...")
+
         resumo = summarize_chunk(chunk, tokenizer, model)
         partial_summaries.append(resumo)
+
+        elapsed = time.time() - start_time
+        print(f"→ Parte {idx} concluída em {elapsed:.2f}s")
 
     # Se só houve um chunk, retorna direto
     if len(partial_summaries) == 1:

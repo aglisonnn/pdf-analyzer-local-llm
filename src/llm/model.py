@@ -13,7 +13,7 @@ def load_model():
 
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
-        device_map="auto",       # usa CPU ou GPU automaticamente
+        device_map="auto",  
         torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32
     )
 
