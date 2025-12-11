@@ -43,6 +43,7 @@ Gera automaticamente um arquivo `.md` contendo:
 
 ## Estrutura do Projeto
 
+```text
 src/
 ├── cli/
 │   └── arguments.py
@@ -61,6 +62,7 @@ src/
 ├── data/       # PDFs de entrada (não incluso no repositório)
 ├── output/     # Arquivos .md gerados
 └── images/     # Imagens extraídas
+```
 
 ---
 
