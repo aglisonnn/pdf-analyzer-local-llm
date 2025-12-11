@@ -44,24 +44,19 @@ Gera automaticamente um arquivo `.md` contendo:
 ## Estrutura do Projeto
 
 src/
-│
 ├── cli/
 │   └── arguments.py
-│
 ├── llm/
 │   ├── model.py
 │   ├── summarize.py
 │   └── test_llm.py
-│
 ├── pdf/
 │   ├── extractor.py
 │   └── images.py
-│
 ├── utils/
 │   ├── text.py
 │   ├── files.py
 │   └── logger.py
-│
 ├── main.py
 ├── data/       # PDFs de entrada (não incluso no repositório)
 ├── output/     # Arquivos .md gerados
