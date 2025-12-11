@@ -196,7 +196,7 @@ Este documento trata das diretrizes de segurança pública...
 
 ---
 
-## 🧹 .gitignore recomendado
+## .gitignore recomendado
 
 gitignore
 venv/
