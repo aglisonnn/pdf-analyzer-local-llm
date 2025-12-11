@@ -62,7 +62,7 @@ src/
 ├── data/       # PDFs de entrada (não incluso no repositório)
 ├── output/     # Arquivos .md gerados
 └── images/     # Imagens extraídas
-
+```
 
 ---
 
