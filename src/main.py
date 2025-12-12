@@ -70,7 +70,7 @@ def main():
 
     if args.images:
         logger.info("Extraindo imagens...")
-        extrair_imagens(arquivo_alvo)
+        extrair_imagens(arquivo_alvo,output_dir)
 
     if resumo:
         md_content = format_report_md(
