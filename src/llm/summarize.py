@@ -80,9 +80,10 @@ def summarize_text(
         return partial_summaries[0]
 
     final_prompt = (
-        "Com base nos resumos parciais a seguir, escreva um resumo final "
-        "em português claro e objetivo, explicando o tema geral do documento "
-        "e seu propósito principal. Evite listas e repetições.\n\n"
+        "Com base nos resumos parciais a seguir, escreva um resumo final consolidado "
+        "em um único parágrafo de texto corrido. "
+        "O texto deve ser em português, claro e objetivo. "
+        "Não use títulos, subtítulos ou marcadores (como 'Propósito Principal').\n\n"
         + "\n\n".join(partial_summaries)
         + "\n\nResumo final:"
     )
